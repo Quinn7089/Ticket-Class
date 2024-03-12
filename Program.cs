@@ -1,4 +1,22 @@
-﻿public class ticket
+﻿
+string file = "ticketData.txt";
+
+ticket Ticket = new ticket();
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+public class ticket
 {
 
     public string ticketID { get; set; }
