@@ -47,6 +47,34 @@ do
 
             if (resp != "Y") { break; }
 
+            Console.WriteLine("Enter Ticket ID:");
+
+            Ticket.ticketID = Console.ReadLine();
+
+            Console.WriteLine("Enter Summary:");
+
+            Ticket.Summary = Console.ReadLine();
+
+            Console.WriteLine("Enter Status:");
+
+            Ticket.Status = Console.ReadLine();
+
+            Console.WriteLine("Enter priority:");
+
+            Ticket.priority = Console.ReadLine();
+
+            Console.WriteLine("Enter Submitter:");
+
+            Ticket.Submitter = Console.ReadLine();
+
+            Console.WriteLine("Enter assigend:");
+
+            Ticket.assigend = Console.ReadLine();
+
+
+            Console.WriteLine("Enter watching:");
+
+            Ticket.watching = Console.ReadLine();
 
         }
         sw.Close();
