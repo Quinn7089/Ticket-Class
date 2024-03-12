@@ -76,6 +76,9 @@ do
 
             Ticket.watching = Console.ReadLine();
 
+            sw.WriteLine(Ticket.ticketID + ", " + Ticket.Summary + ", " + Ticket.Status + ", " + Ticket.priority + ", "
+            + Ticket.Submitter + ", " + Ticket.assigend + ", " + Ticket.watching);
+
         }
         sw.Close();
     }
