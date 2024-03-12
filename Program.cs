@@ -12,7 +12,33 @@ do
 
     Ticket.choice = Console.ReadLine();
 
-} while (Ticket.choice == "1" || Ticket.choice == "2");
+    if (Ticket.choice == "1")
+    {
+        if (File.Exists(file))
+        {
+
+            StreamReader sr = new StreamReader(file);
+
+            while (!sr.EndOfStream)
+            {
+
+                string newPerson = sr.ReadLine();
+
+                Console.WriteLine(newPerson);
+
+            }
+            sr.Close();
+
+        }
+        else
+        {
+            Console.WriteLine("File does not exist");
+        }
+
+
+
+    }
+} while (Ticket.choice == "1" || Ticket.choice == "2") ;
 
 
 
