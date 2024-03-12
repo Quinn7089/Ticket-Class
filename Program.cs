@@ -3,7 +3,16 @@ string file = "ticketData.txt";
 
 ticket Ticket = new ticket();
 
+do
+{
+    Console.WriteLine("1) Read Data from file.");
+    Console.WriteLine("2) Create File from data");
+    Console.WriteLine("Enter any other key to exit");
 
+
+    Ticket.choice = Console.ReadLine();
+
+} while (Ticket.choice == "1" || Ticket.choice == "2");
 
 
 
